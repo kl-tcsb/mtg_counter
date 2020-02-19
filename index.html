@@ -51,23 +51,27 @@
       .MTG {
         font-size: 29px;
       }
-      #player1btn{
+
+      #player1btn {
         left: 635px;
         top: 600px;
         position: absolute;
       }
-      button{
+
+      button {
         width: 50px;
       }
-    
-    #player2btn{
+
+      #player2btn {
         left: 905px;
         top: 600px;
         position: absolute;
       }
-      button{
+
+      button {
         width: 50px;
       }
+
     </style>
 
   </head>
@@ -80,27 +84,57 @@
     <div id="player1">
       <h2>player 1</h2>
       <p class="MTG">20</p>
+
     </div>
     <div id="player2">
       <h2>player 2</h2>
       <p class="MTG">20</p>
     </div>
     <div id="player1btn">
-      <button id="player1plus">
+      <button onclick="onplayer1plus1()" id="player1plus">
         +
       </button>
-      <button id="player1minus">
+      <button onclick="onplayer1minus1()" id="player1minus">
         -
       </button>
     </div>
-    <div id="player2btn">
-      <button id="player2plus">
+    <div 
+     id="player2btn">
+      <button onclick="onplayer2plus1()" id="player2plus">
         +
       </button>
-      <button id="player2minus">
+      <button onclick="onplayer2minus1()" id="player2minus">
         -
       </button>
+    </div>
+    <script>
+      var player1 = 20;
+
+      var player2 = 20;
+
+      function onplayer1plus1() {
+        player1 += 1;
+        console.log(player1, "player1")
+      }
+      function onplayer1minus1() {
+        player1 -= 1;
+        console.log(player1, "player1")
+      }
+      function onplayer2plus1() {
+        player2 += 1;
+        console.log(player2, "player2")
+      } 
+      function onplayer2minus1() {
+        player2 -= 1;
+        console.log(player2, "player2")
+      }
+
+    </script>
+    <div id="player2">
+      <h2>player 2</h2>
+      <p class="MTG">20</p>
     </div>
   </body>
 
 </html>
+button 000000^
