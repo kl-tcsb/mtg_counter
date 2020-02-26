@@ -24,7 +24,7 @@
         position: absolute;
         height: 160px;
         width: 120px;
-        left: 900px;
+        margin-left: 80%;
         top: 70px;
         font-family: "Comic Sans MS", cursive, sans-serif;
       }
@@ -35,7 +35,7 @@
         height: 160px;
         width: 120px;
         position: absolute;
-        left: 600px;
+        margin-left: 60%;
         top: 70px;
         font-family: "Comic Sans MS", cursive, sans-serif;
       }
@@ -53,7 +53,7 @@
       }
 
       #player1btn {
-        left: 635px;
+        left: 905px;
         top: 600px;
         position: absolute;
       }
@@ -63,13 +63,36 @@
       }
 
       #player2btn {
-        left: 905px;
+        left: 635px;
         top: 600px;
+
         position: absolute;
       }
 
       button {
         width: 50px;
+      }
+
+      @media screen and (max-width: 630px) {
+        #player2 {
+          margin-left: 40%;
+        }
+
+        #player1 {
+          margin-left: 70%;
+
+        }
+
+        #player1btn {
+          left: 340px;
+          top: 300px;
+          position: absolute;
+        }
+        #player2btn {
+          left: 80px;
+          top: 300px;
+          position: absolute;
+        }
       }
 
     </style>
@@ -98,8 +121,7 @@
         -
       </button>
     </div>
-    <div 
-     id="player2btn">
+    <div id="player2btn">
       <button onclick="onplayer2plus1()" id="player2plus">
         +
       </button>
@@ -123,7 +145,7 @@
       function onplayer2plus1() {
         player2 += 1;
         console.log(player2, "player2")
-      } 
+      }
       function onplayer2minus1() {
         player2 -= 1;
         console.log(player2, "player2")
